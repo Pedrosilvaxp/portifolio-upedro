@@ -1,0 +1,78 @@
+* {margin: 0px; padding: 0px;}
+/*
+    --cor1: #001526;
+    --cor2: #E2071E;
+    --cor3: #FCD700;
+*/
+:root {
+    --fonte1: 'Trebuchet MS';
+    --fonte2: Arial;
+    --fonte3: Impact;
+
+    --cor1: #001526;
+    --cor2: #E2071E;
+    --cor3: #FCD700;
+}
+
+header {
+    font: normal lighter 23px var(--fonte3);
+    padding: 36px 40px;
+    max-width: 900px;
+    min-width: 220px;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 23px;
+}
+nav > h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    margin-right: auto;
+    color: var(--cor3);
+}
+nav > a {
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: lighter;
+    font-family: var(--fonte1);
+    color: var(--cor2);   
+}
+nav > a:hover {
+    color: var(--cor3);
+}
+
+body {
+    background-image: linear-gradient(to right, black, var(--cor1), black);
+}
+
+/* Main */
+main {
+    max-width: 950px;
+    min-width: 220px;
+    margin: auto;
+    /* border-top: 3px solid var(--cor2); */
+    border-radius: 70px;
+    padding: 16px 45px;
+}
+section > h1 {
+    font: normal bold 28px var(--fonte2);
+    color: var(--cor2);
+    margin: 15px;
+}
+section > p {
+    font: normal normal 20px var(--fonte1);
+    color: var(--cor2);
+}
+h1#tema {
+    text-align: center;
+    font-family: var(--fonte2);
+    color: var(--cor2);
+}
+p > strong {
+    color: var(--cor3);
+}
