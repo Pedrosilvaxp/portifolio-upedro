@@ -73,9 +73,8 @@ span {
         overflow-x: hidden;
     }
     .menu-list {
-        display: block;
         position: absolute;
-        top: 18vh; 
+        top: 18vh;
         right: 0;
         width: 50vw;
         height: 92vh;
@@ -91,7 +90,10 @@ span {
     padding: 5px;
     animation: navLinkFade 1s normal;
 }
-.menu-list.active { 
+.menu-list.active {
+    display: flex;
+    justify-content: start;
+    align-items: start;
     transform: translateX(0);
 }
 @keyframes navLinkFade {
