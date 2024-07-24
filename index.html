@@ -3,25 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Pedro Silva - Portofólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="load()">
+<body>
     <header>
-        <nav>
-            <h1>Pedro Silva</h1>
-            <a id="link1" href="#">Projetos</a>
-            <a id="link2" href="#">Habilidades</a>
-            <a id="link3" href="#">Experiências</a>
+        <nav class="container"> 
+            <picture>
+                <source media="(max-width: 380px)" srcset="imagens/logo-upedro-p.png" type="image/png">
+                <img src="imagens/logo-upedro.png" alt="Foto do Pedro">
+            </picture>
+             
+            <ul class="container">
+                <li>
+                    <a href="#" id="linkpro" class="nav-link" onclick="scrollProjeto()">
+                        <span class="material-icons">construction</span>Projetos
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="linkhab" class="nav-link" onclick="scrollHabilidade()">
+                        <span class="material-icons">bolt</span>Habilidades
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="linksobre" class="nav-link" onclick="scrollSobre()">
+                        <span class="material-icons">person</span>Sobre mim
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Links redes sociais -->
+            <ul class="container">
+                    <li>
+                        <a href="https://www.linkedin.com/in/pedrosilvalk/" target="_blank" rel="external" class="icon-link">
+                            <i class='bx bxl-linkedin-square' style='color:#f9f6f6'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Pedrosilvaxp" target="_blank" rel="external" class="icon-link">
+                            <i class='bx bxl-github' style='color:#f9f6f6'></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Menu mobile button -->
+                <div class="menu-btn">
+                    <div class="line1"></div>
+                    <div class="line2"></div>  
+                    <div class="line3"></div>
+                </div>
+                <!-- Menu mobile list -->
+                <div class="menu-list">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav-link" onclick="scrollProjeto()">
+                                <span class="material-icons">construction</span>Projetos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link" onclick="scrollHabilidade()">
+                                <span class="material-icons">bolt</span>Habilidades
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link" onclick="scrollSobre()">
+                                <span class="material-icons">person</span>Sobre mim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/pedrosilvalk/" target="_blank" rel="external" id="linkedin" class="nav-link">
+                                <i class='bx bxl-linkedin-square icon-link' style='color:#f9f6f6'  ></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Pedrosilvaxp" id="github" target="_blank" rel="external" class="nav-link icon-link">
+                                <i class='bx bxl-github' style='color:#f9f6f6' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
     </header>
+    <!-- END OF HEADER -->
+
+    <!-- MAIN -->
     <main>
         <section>
-            <h1 id="tema">Desenvolvedor Front-End</h1>
-            <h1>Sobre mim</h1>
-            <p>Sou o Pedro Silva, desenvolvedor <strong>Front-End</strong>, futuramente Full-Stack. Tenho conhecimento intermediário em <strong>HTML</strong> e <strong>CSS</strong>. E conhecimento básico em <strong>JavaScript</strong> e <strong>Python</strong>. Tenho dedicação e sempre disposto a melhorar.</p>
+            <div class="inicial">
+                <div class="introducao">
+                    <h1>Desenvolvedor <strong>Front-End</strong></h1>
+                    <p>Olá, sou o Pedro e seja bem vindo ao meu portifólio. Tenho grande paixão por desenvolver software. Pois, desenvolver é poder. Sigo melhorando cada vez mais nas tecnologias, dedicando-me e esforçando-me ao máximo.</p>
+                </div>
+                <div class="circle">
+                    <img src="imagens/pedro.jpg" alt="foto do Pedro">
+                </div>
+            </div> 
+
+            <!-- Projetos -->
+            <section class="projetos sobre">
+                <h1>Meus <strong>Projetos</strong></h1>
+                <div class="container" style="row-gap: 30px; justify-content: center;">
+                    <div class="item-projeto"><a href="https://pedrosilvaxp.github.io/landing-tech/" target="_blank" rel="external"><img src="imagens/landing-tech.png" alt="Imagem demonstração de projeto"></a></div>
+
+                    <div class="item-projeto"><a href="https://amapeccabucutesting.netlify.app/" target="_blank" rel="external"><img src="imagens/amapec.png" alt="Imagem demonstração de projeto"></a></div>
+
+                    <div class="item-projeto">
+                        <a href="https://pedrosilvaxp.github.io/pscode/" target="_blank" rel="external"><img src="imagens/pscode.png" alt="Imagem demonstração de projeto"></a>
+                    </div>
+
+                    <div class="item-projeto">
+                        <a href="https://pedrosilvaxp.github.io/Projeto-Android/" target="_blank" rel="external"><img src="imagens/dandroids.png" alt="Imagem demonstração de projeto"></a>
+                    </div>
+
+                    <div class="item-projeto">
+                        <a href="https://pedrosilvaxp.github.io/projeto-social/" target="_blank" rel="external"><img src="imagens/social.png" alt="Imagem demonstração de projeto"></a>
+                    </div>
+
+                    <div class="item-projeto"><a href="https://pedrosilvaxp.github.io/HTML-CSS/Desafios/d012/" target="_blank" rel="external"><img src="imagens/cordel.png" alt="Imagem demonstração de projeto"></a></div>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section class="sobre habilidades">
+                <h1>Minhas <strong>Habilidades</strong></h1>
+                <div class="container-hab">
+                    <div class="linguagens">
+                        <h1>HTML</h1>
+                        <img class="logo" src="imagens/html-logo.webp" alt="logo do html">
+                        <p>HTML (Hypertext Markup Language) é uma linguagem de marcação usada para criar páginas da web. Ela consiste em uma série de elementos (tags) que são usados para estruturar o conteúdo de uma página, como títulos, parágrafos, imagens e links.</p>
+                    </div>
+                    <div class="linguagens">
+                        <h1>CSS</h1>
+                        <img class="logo" src="imagens/css-logo.webp" alt="logo das css">
+                        <p>CSS, ou Cascading Style Sheets, é uma linguagem de estilo usada para controlar o design e a aparência de um site ou aplicativo. Com CSS, os desenvolvedores podem definir cores, fontes, margens, espaçamento, tamanho de texto e muitos outros aspectos visuais de uma página da web.</p>
+                    </div>
+                    <div class="linguagens">
+                        <h1>JavaScript</h1>
+                        <img class="logo" src="imagens/js-logo.webp" alt="logo do JavaScript">
+                        <p>JavaScript (JS) é uma linguagem de programação de alto nível, dinâmica e interpretada que é amplamente usada para criar interatividade em páginas da web. Ela foi criada originalmente para ser executada nos navegadores web.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sobre min -->
+            <article class="sobre sobremin">
+                <h1>Sobre mim</h1>
+                <div class="container" style="row-gap: 50px; justify-content: center; column-gap: 70px;">
+                    <div class="circle">
+                        <img src="imagens/dev.avif" alt="">
+                    </div>
+                    <div class="sobre-paragrafo">
+                        <p>Sou o Pedro Silva do Nascimento, e conheci o mundo da programação a um ano. Sempre estudei através de cursos gratuitos, principalmente do <a href="https://www.cursoemvideo.com/" target="_blank" rel="external" style="text-decoration: underline;">CursoemVideo</a>, onde comecei a estudar Python e depois as tecnologias Front-End. <br>E acabei me identificando. Por poder criar algo que possa beneficiar várias pessoas, e também, dar uma de Mark Zuckerberg, kkk. Hoje, sou um desenvolvedor apaixonado pelo Front-End, e também tenho o objetivo de ser Full-Stack. <br> Atualmente estou matriculado no curso Técnico em Desenvolvimento de Sistemas do <abbr title="Serviço Nacional de Aprendizagem Industrial"><a href="https://www.senaibahia.com.br/" target="_blank" rel="external">Senai</a></abbr>. Estou muito ansioso para aprender mais, fazer networking, e evoluir profissionalmente.</p>
+                    </div>
+                </div>
+            </article>
+
+            
         </section>
     </main>
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <a href="https://www.linkedin.com/in/pedrosilvalk/" target="_blank" rel="external">Pedro Silva do Nascimento</a></p>
+    </footer>
+
+    <a href="#" id="btn-topo"><i class='bx bx-up-arrow-alt' style='color:var(--cor1)'></i></a>
+
     <script src="script.js"></script>
 </body>
 </html>
