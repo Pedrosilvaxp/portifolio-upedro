@@ -67,7 +67,10 @@ span {
     display: none;
 }
 @media (max-width: 917px) {
-    .menu-btn {display: block;}
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
     ul.container {display: none;}
     body {
         overflow-x: hidden;
