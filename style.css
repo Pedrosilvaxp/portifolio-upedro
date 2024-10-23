@@ -267,6 +267,10 @@ abbr {text-decoration: underline;}
 
 /* FOOTER */
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--cor2);
     padding: 20px;
     text-align: center;
 }

@@ -62,6 +62,13 @@ function scrollProjeto() {
     proje.scrollIntoView({ behavior:'smooth' });
 };
 
+// Scroll Serviços
+const servicos = document.querySelector('.servicos');
+function scrollServicos() {
+    event.preventDefault();
+    servicos.scrollIntoView({behavior:'smooth'});
+}
+
 // Scroll habilidades
 const habi = document.querySelector('.habilidades');
 function scrollHabilidade() {
